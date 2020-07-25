@@ -14,6 +14,7 @@
 
 # Tecnologias
 
-- [X] Typescript.
-- [x] ReactJS.
+- [X] TypeScript.
+- [X] ReactJS.
 - [X] Styled-components.
+- [X] Flexbox.
