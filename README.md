@@ -1,6 +1,5 @@
 # Clone do Twitter 
-
-<img src="https://i.imgur.com/u6j4VUJ.gif"/>
+[<img src="https://i.imgur.com/u6j4VUJ.gif"/>](https://cloneflex-twitter.netlify.app/)
 
 # Clone do twitter feito em ReactJS.
 
