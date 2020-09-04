@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const UserIcon = styled.div`
   width: 39px;

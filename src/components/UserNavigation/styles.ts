@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { fade } from "../../styles/animations";
+import styled from 'styled-components';
+import { fade } from '../../styles/animations';
 
 export const Container = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: space-evenly;
   }
-  @media (max-width: 700px){
+  @media (max-width: 700px) {
     justify-content: space-between;
   }
 `;
@@ -57,7 +57,7 @@ export const TweetButton = styled.button`
   @media (min-width: 901px) and (max-width: 909px) {
     display: flex;
     width: 120px;
-  
+
     & > div > span {
       display: inline;
     }
@@ -66,7 +66,7 @@ export const TweetButton = styled.button`
     width: 47px;
     height: 47px;
     border-radius: 50%;
-    & > div > span {  
+    & > div > span {
       display: none;
     }
     margin: 10px 0px 5px 0px;
@@ -79,7 +79,7 @@ export const TweetButton = styled.button`
     }
   }
   @media (min-width: 1299px) {
-    &  div > div > svg {
+    & div > div > svg {
       display: none;
     }
   }

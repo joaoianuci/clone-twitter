@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   transition: background-color 0.2s ease-in;
@@ -29,7 +29,7 @@ export const UserData = styled.div`
   width: 100%;
   max-width: 200px;
   flex-direction: column;
-  @media (max-width: 1300px){
+  @media (max-width: 1300px) {
     max-width: 120px;
   }
 `;

@@ -1,13 +1,13 @@
-import styled from "styled-components";
-import { fade } from "../../styles/animations";
+import styled from 'styled-components';
+import { fade } from '../../styles/animations';
 
-//UN = USER NAVIGATION
-//UI = USER INFO
-//HI = HEADER INFO
-//SB = SEARCH BAR
-//TD = TWEET DATA
-//WH = WHAT HAPPENING
-//WF = WHO FOLLOW
+// UN = USER NAVIGATION
+// UI = USER INFO
+// HI = HEADER INFO
+// SB = SEARCH BAR
+// TD = TWEET DATA
+// WH = WHAT HAPPENING
+// WF = WHO FOLLOW
 
 export const Header = styled.div`
   display: flex;
@@ -61,19 +61,20 @@ export const Grid = styled.div`
   height: 100vh;
   justify-content: center;
   grid-template-columns: 275px 598px 400px;
+  grid-template-rows: 300px 100px 500px;
   grid-template-areas:
-    "UN HI SB"
-    "UN TD WH"
-    "UI TD WF";
+    'UN HI SB'
+    'UN TD WH'
+    'UI TD WF';
   position: relative;
   & > div:last-child {
     height: 100vh;
-    & > div:last-child{
+    & > div:last-child {
       margin-bottom: 10px;
     }
-    & > div:first-child{
+    & > div:first-child {
       width: 100%;
-      height: 52px; 
+      height: 52px;
       position: fixed;
       top: 0px;
       background-color: var(--primary);
@@ -94,14 +95,14 @@ export const Grid = styled.div`
   }
   @media (max-width: 1000px) {
     & {
-      & > div:last-child{
+      & > div:last-child {
         display: none;
       }
       grid-template-columns: 80px 598px;
       grid-template-areas:
-        "UN HI"
-        "UN TD"
-        "UI TD";
+        'UN HI'
+        'UN TD'
+        'UI TD';
     }
   }
   @media (max-width: 900px) {
@@ -128,9 +129,9 @@ export const Grid = styled.div`
       padding: 0;
       grid-template-columns: 100%;
       grid-template-areas:
-        "HI HI HI"
-        "TD TD TD"
-        "UN UN UN";
+        'HI HI HI'
+        'TD TD TD'
+        'UN UN UN';
     }
   }
 `;

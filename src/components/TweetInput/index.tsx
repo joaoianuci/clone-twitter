@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Container,
   InputData,
@@ -6,24 +6,24 @@ import {
   Footer,
   Icons,
   TweetButton,
-} from "./styles";
-import { UserIcon } from "../../styles/GlobalStyles";
+} from './styles';
+import { UserIcon } from '../../styles/GlobalStyles';
 import {
   FiImage,
   AiOutlineFileGif,
   TiChartBar,
   IoMdHappy,
   FaCalendarAlt,
-} from "react-icons/all";
+} from 'react-icons/all';
 
-import Icon from "../Icon";
+import Icon from '../Icon';
 
 const TweetInput: React.FC = () => {
   return (
     <Container>
       <UserIcon />
       <InputData>
-        <Input placeholder="O que está acontecendo?" type="text"/>
+        <Input placeholder="O que está acontecendo?" type="text" />
         <Footer>
           <Icons>
             <Icon hover icon={<FiImage />} />

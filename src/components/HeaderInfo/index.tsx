@@ -1,8 +1,8 @@
-import React from "react";
-import { Container, PageName, Row } from "./styles";
-import { WiStars } from "react-icons/wi";
-import Icon from "../Icon";
-import { UserIcon } from "../../styles/GlobalStyles";
+import React from 'react';
+import { Container, PageName, Row } from './styles';
+import { WiStars } from 'react-icons/wi';
+import Icon from '../Icon';
+import { UserIcon } from '../../styles/GlobalStyles';
 
 const HeaderInfo: React.FC = () => {
   return (

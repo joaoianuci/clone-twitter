@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Container,
   User,
@@ -6,8 +6,8 @@ import {
   Name,
   Username,
   FollowButton,
-} from "./styles";
-import { UserIcon } from "../../styles/GlobalStyles";
+} from './styles';
+import { UserIcon } from '../../styles/GlobalStyles';
 
 export interface Props {
   name: string;

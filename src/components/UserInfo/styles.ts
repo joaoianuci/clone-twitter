@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ export const Container = styled.div`
     background-color: rgba(29, 161, 242, 0.1);
   }
   @media (max-width: 1300px) {
-    &{
+    & {
       width: max-content;
       border-radius: 50%;
       margin: 0px 0px 0px 3px;
@@ -26,7 +26,7 @@ export const Container = styled.div`
       display: none;
     }
   }
-  @media (max-width: 900px){
+  @media (max-width: 900px) {
     & {
       display: none;
     }

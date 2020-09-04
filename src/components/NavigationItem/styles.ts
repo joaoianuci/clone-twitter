@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { Props } from ".";
+import styled from 'styled-components';
+import { Props } from '.';
 
 export const Container = styled.div<Props>`
-  display: ${(props) => (props.itemName === "Procurar" ? "none" : "flex")};
+  display: ${(props) => (props.itemName === 'Procurar' ? 'none' : 'flex')};
   transition: background-color 0.2s;
   width: max-content;
   align-items: center;
@@ -25,9 +25,9 @@ export const Container = styled.div<Props>`
     & {
       margin-top: 0px;
       display: ${(props) =>
-        props.essential && !(props.itemName === "Itens salvos")
-          ? "flex"
-          : "none"};
+        props.essential && !(props.itemName === 'Itens salvos')
+          ? 'flex'
+          : 'none'};
       svg {
         color: var(--quinary);
       }

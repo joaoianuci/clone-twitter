@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { Container, TweetButton } from "./styles";
+import { Container, TweetButton } from './styles';
 import {
   FiHome,
   FiTwitter,
@@ -13,9 +13,9 @@ import {
   FiHash,
   FiFeather,
   FiSearch,
-} from "react-icons/fi";
-import NavigationItem from "../NavigationItem";
-import Icon from "../Icon";
+} from 'react-icons/fi';
+import NavigationItem from '../NavigationItem';
+import Icon from '../Icon';
 
 const UserNavigation: React.FC = () => {
   return (

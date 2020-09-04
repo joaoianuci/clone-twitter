@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import moment from "moment";
-import "moment/locale/pt-br";
+import React, { useEffect, useState } from 'react';
+import moment from 'moment';
+import 'moment/locale/pt-br';
 import {
   Container,
   TweetInfo,
@@ -10,15 +10,15 @@ import {
   Interactions,
   InteractionItem,
   Retweet,
-} from "./styles";
-import { UserIcon } from "../../styles/GlobalStyles";
-import Icon from "../Icon";
+} from './styles';
+import { UserIcon } from '../../styles/GlobalStyles';
+import Icon from '../Icon';
 import {
   AiOutlineRetweet,
   AiOutlineUpload,
   AiOutlineHeart,
   AiOutlineComment,
-} from "react-icons/ai";
+} from 'react-icons/ai';
 
 export interface Props {
   date: Date;
@@ -42,7 +42,7 @@ const Tweet: React.FC<Props> = ({
   interactions,
   retweetMessage,
 }) => {
-  moment.locale("pt-br");
+  moment.locale('pt-br');
   const [timePost, setTimePost] = useState(moment(date).fromNow());
   const contentIsTweet = React.isValidElement(content);
   useEffect(() => {
@@ -75,7 +75,7 @@ const Tweet: React.FC<Props> = ({
           <InteractionItem>
             <Icon
               hover
-              textHover={"var(--twitter)"}
+              textHover={'var(--twitter)'}
               icon={<AiOutlineComment />}
             />
             {interactions.replies > 0 ? (
@@ -87,8 +87,8 @@ const Tweet: React.FC<Props> = ({
           <InteractionItem>
             <Icon
               hover
-              backgroundHover={"rgba(22, 182, 95, 0.1)"}
-              textHover={"rgba(22, 182, 95, 1)"}
+              backgroundHover={'rgba(22, 182, 95, 0.1)'}
+              textHover={'rgba(22, 182, 95, 1)'}
               icon={<AiOutlineRetweet />}
             />
             {interactions.retweets > 0 ? (
@@ -100,8 +100,8 @@ const Tweet: React.FC<Props> = ({
           <InteractionItem>
             <Icon
               hover
-              backgroundHover={"rgb(224, 36, 94, 0.1)"}
-              textHover={"rgb(224, 36, 94)"}
+              backgroundHover={'rgb(224, 36, 94, 0.1)'}
+              textHover={'rgb(224, 36, 94)'}
               icon={<AiOutlineHeart />}
             />
             {interactions.likes > 0 ? (
@@ -113,7 +113,7 @@ const Tweet: React.FC<Props> = ({
           <InteractionItem>
             <Icon
               hover
-              textHover={"var(--twitter)"}
+              textHover={'var(--twitter)'}
               icon={<AiOutlineUpload />}
             />
             <span></span>

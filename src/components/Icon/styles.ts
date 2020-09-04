@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { Props } from ".";
+import styled, { css } from 'styled-components';
+import { Props } from '.';
 
 export const Container = styled.div<Props>`
   color: var(--white);
@@ -8,7 +8,7 @@ export const Container = styled.div<Props>`
     height: 29px;
   }
   &:hover {
-    color: ${(props) => (props.textHover ? props.textHover : "var(--white)")};
+    color: ${(props) => (props.textHover ? props.textHover : 'var(--white)')};
   }
   ${(props) =>
     props.hover &&
@@ -20,12 +20,12 @@ export const Container = styled.div<Props>`
         border-radius: 50%;
       }
       &:hover + span {
-        color: ${props.textHover ? props.textHover : "var(--twitter)"};
+        color: ${props.textHover ? props.textHover : 'var(--twitter)'};
       }
       &:hover {
         background-color: ${props.backgroundHover
           ? props.backgroundHover
-          : "rgba(29, 161, 242, 0.1)"};
+          : 'rgba(29, 161, 242, 0.1)'};
       }
     `}
 `;

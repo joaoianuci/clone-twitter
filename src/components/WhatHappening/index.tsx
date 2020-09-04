@@ -1,7 +1,7 @@
-import React from "react";
-import { Container, Title } from "./styles";
-import HappeningItem from "../HappeningItem";
-import ShowMore from "../ShowMore";
+import React from 'react';
+import { Container, Title } from './styles';
+import HappeningItem from '../HappeningItem';
+import ShowMore from '../ShowMore';
 
 const WhatHappening: React.FC = () => {
   return (
@@ -36,7 +36,7 @@ const WhatHappening: React.FC = () => {
         time="Ontem"
         title="Novo tweet do Felipe Neto"
       />
-      <ShowMore/>
+      <ShowMore />
     </Container>
   );
 };

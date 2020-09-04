@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ export const Container = styled.div`
   grid-area: HI;
   z-index: 3;
   @media (max-width: 900px) {
-    & > div:first-child > div:first-child{
+    & > div:first-child > div:first-child {
       width: 30px;
       height: 30px;
     }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ export const Container = styled.div`
   background-color: var(--primary-light);
   margin: 62px 0px 0px 30px;
 
-  @media (max-width: 1300px){
+  @media (max-width: 1300px) {
     max-width: 300px;
   }
 `;

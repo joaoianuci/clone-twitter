@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import { Container, Name, User, UserData, UserName } from "./styles";
-import { FiChevronDown } from "react-icons/fi";
-import Icon from "../Icon";
-import { UserIcon } from "../../styles/GlobalStyles";
+import { Container, Name, User, UserData, UserName } from './styles';
+import { FiChevronDown } from 'react-icons/fi';
+import Icon from '../Icon';
+import { UserIcon } from '../../styles/GlobalStyles';
 
 export interface Props {
   userName: string;
@@ -13,7 +13,7 @@ export interface Props {
 const UserInfo: React.FC<Props> = ({ userName, user }) => {
   return (
     <Container>
-      <UserIcon/>
+      <UserIcon />
       <User>
         <UserData>
           <Name>{user}</Name>

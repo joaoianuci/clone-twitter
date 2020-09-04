@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Container, Link } from './styles';
 
 const ShowMore: React.FC = () => {

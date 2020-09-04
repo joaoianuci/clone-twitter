@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Props } from ".";
+import styled from 'styled-components';
+import { Props } from '.';
 
 export const Container = styled.div`
   display: flex;
@@ -64,7 +64,7 @@ export const Image = styled.div<Props>`
   min-width: calc(69px);
   max-width: calc(90px);
   min-height: calc(69px);
-  background-image: url(${(props) => (props.image ? props.image : "none")});
+  background-image: url(${(props) => (props.image ? props.image : 'none')});
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 15px;

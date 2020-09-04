@@ -1,7 +1,7 @@
-import React from "react";
-import { Container, Title } from "./styles";
-import ShowMore from "../ShowMore";
-import FollowItem from "../FollowItem";
+import React from 'react';
+import { Container, Title } from './styles';
+import ShowMore from '../ShowMore';
+import FollowItem from '../FollowItem';
 
 const WhoFollow: React.FC = () => {
   return (

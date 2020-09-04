@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import { Container } from "./styles";
-import Icon from "../Icon";
-import NameItem from "../NameItem";
+import { Container } from './styles';
+import Icon from '../Icon';
+import NameItem from '../NameItem';
 
 export interface Props {
   essential?: boolean;

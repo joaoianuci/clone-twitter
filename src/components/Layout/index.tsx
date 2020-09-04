@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import { Grid, Header } from "./styles";
-import UserNavigation from "../UserNavigation";
-import UserInfo from "../UserInfo";
-import HeaderInfo from "../HeaderInfo";
-import TweetData from "../TweetData";
-import SearchBar from "../SearchBar";
-import WhatHappening from "../WhatHappening";
-import WhoFollow from "../WhoFollow";
+import { Grid, Header } from './styles';
+import UserNavigation from '../UserNavigation';
+import UserInfo from '../UserInfo';
+import HeaderInfo from '../HeaderInfo';
+import TweetData from '../TweetData';
+import SearchBar from '../SearchBar';
+import WhatHappening from '../WhatHappening';
+import WhoFollow from '../WhoFollow';
 
 const Layout: React.FC = () => {
   return (

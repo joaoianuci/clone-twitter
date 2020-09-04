@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import ClickAwayListener from "react-click-away-listener";
+import React, { useState } from 'react';
+import ClickAwayListener from 'react-click-away-listener';
 
-import { Container, Input } from "./styles";
-import Icon from "../Icon";
-import { MdClose } from "react-icons/md";
-import { FiSearch } from "react-icons/fi";
+import { Container, Input } from './styles';
+import Icon from '../Icon';
+import { MdClose } from 'react-icons/md';
+import { FiSearch } from 'react-icons/fi';
 
 const SearchBar: React.FC = () => {
   const [actived, setActived] = useState(false);
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState('');
   return (
     <ClickAwayListener onClickAway={() => setActived(false)}>
-      <Container className={actived ? "actived" : ""}>
+      <Container className={actived ? 'actived' : ''}>
         <div>
           <Icon icon={<FiSearch />} />
 
@@ -22,10 +22,13 @@ const SearchBar: React.FC = () => {
             placeholder="Buscar no twitter"
           />
         </div>
-        <Icon icon={<MdClose />} handleClick={() => {
-            setSearchValue('')
-            setActived(false)
-        }} />
+        <Icon
+          icon={<MdClose />}
+          handleClick={() => {
+            setSearchValue('');
+            setActived(false);
+          }}
+        />
       </Container>
     </ClickAwayListener>
   );

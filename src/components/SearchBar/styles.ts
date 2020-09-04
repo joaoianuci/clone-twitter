@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -14,10 +14,10 @@ export const Container = styled.div`
   justify-content: space-evenly;
   position: fixed;
   top: 0px;
-  @media (max-width: 1300px){
+  @media (max-width: 1300px) {
     max-width: 300px;
   }
-  @media (max-width: 1000px){
+  @media (max-width: 1000px) {
     display: none;
   }
   &.actived {

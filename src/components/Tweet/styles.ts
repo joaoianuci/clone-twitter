@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   transition: background-color 0.2s ease-in;
@@ -69,8 +69,8 @@ export const Retweet = styled.div`
     border: 0;
     justify-content: start;
     grid-template-areas:
-      "HU" "HU"
-      "TI" "TI";
+      'HU' 'HU'
+      'TI' 'TI';
   }
   & > div > div:nth-child(1) {
     width: 20px;

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { Name } from "./styles";
+import { Name } from './styles';
 
 export interface Props {
   itemName?: string;

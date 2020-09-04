@@ -1,6 +1,6 @@
-import React from "react";
-import numeral from "numeral";
-import "numeral/locales/pt-br";
+import React from 'react';
+import numeral from 'numeral';
+import 'numeral/locales/pt-br';
 import {
   Container,
   Main,
@@ -12,7 +12,7 @@ import {
   Footer,
   Tweets,
   Image,
-} from "./styles";
+} from './styles';
 export interface Props {
   category: string;
   title: string;
@@ -28,7 +28,7 @@ const HappeningItem: React.FC<Props> = ({
   tweets,
   image,
 }) => {
-  numeral.locale("pt-br");
+  numeral.locale('pt-br');
   return (
     <Container>
       <Main>
@@ -42,13 +42,13 @@ const HappeningItem: React.FC<Props> = ({
         </Body>
         <Footer>
           {tweets !== undefined && tweets > 0 ? (
-            <Tweets>{numeral(tweets).format("0,00 a")} Tweets</Tweets>
+            <Tweets>{numeral(tweets).format('0,00 a')} Tweets</Tweets>
           ) : (
             <></>
           )}
         </Footer>
       </Main>
-      {image !== undefined && image !== "" && image !== null ? (
+      {image !== undefined && image !== '' && image !== null ? (
         <Image
           category={category}
           title={title}
