@@ -35,6 +35,9 @@ export const Separator = styled.div`
 
 export const Tweets = styled.div`
   & > div:last-child {
-    padding-bottom: 25%;
+    padding-bottom: 60px;
+    @media (max-width: 1000px) {
+      padding-bottom: 120px;
+    }
   }
 `;
