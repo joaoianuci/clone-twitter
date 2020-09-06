@@ -36,7 +36,7 @@ const TweetData: React.FC = () => {
                 <Tweet
                   date={new Date()}
                   content={'Amo flex e grid layouts!'}
-                  user={{ name: 'flex', username: '@layout' }}
+                  user={{ name: 'bignametoshowellipsis', username: '@abigbigbigbigusernameonlytoshowtheellipsishahaha' }}
                   interactions={{ likes: 0, retweets: 3, replies: 1 }}
                 />
               }
@@ -60,6 +60,20 @@ const TweetData: React.FC = () => {
               content={'Eu adoro flex-layouts, isto é muito bom'}
               user={{ name: 'flex', username: '@layout' }}
               interactions={{ likes: 1000, retweets: 30, replies: 19 }}
+            />
+            <Tweet
+              date={new Date()}
+              retweetMessage={'Tbm amo <3'}
+              content={
+                <Tweet
+                  date={new Date()}
+                  content={'Amo flex e grid layouts!'}
+                  user={{ name: 'flex', username: '@layout' }}
+                  interactions={{ likes: 10, retweets: 2, replies: 4 }}
+                />
+              }
+              user={{ name: 'flex', username: '@layout' }}
+              interactions={{ likes: 0, retweets: 3, replies: 1 }}
             />
           </Tweets>
         </>

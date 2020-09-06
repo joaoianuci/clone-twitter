@@ -25,15 +25,28 @@ export const TweetInfo = styled.div`
 
 export const UserData = styled.div`
   display: flex;
-  align-items: center;
   width: 100%;
-  max-width: calc(100% - 100px);
+  > div:first-child {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-width: 30px;
+    max-width: 120px;
+  }
   > span {
     margin-left: 5px;
     color: var(--quinary);
     white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+
+    > span {
+      display: inline-block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    > span:first-child {
+      min-width: 50px;
+      max-width: 100px;
+    }
   }
 `;
 
@@ -44,7 +57,7 @@ export const Name = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 100%;
+  width: calc(100% - 29px);
   margin: 5px 0px;
   color: var(--white);
 `;
@@ -88,6 +101,14 @@ export const Retweet = styled.div`
   }
   & > div > div:nth-child(2) > div:nth-child(3) {
     display: none;
+  }
+
+  & > div > div:nth-child(2) > div:nth-child(1) > span {
+    @media (max-width: 575px) {
+      & > span {
+        max-width: 100px;
+      }
+    }
   }
 `;
 

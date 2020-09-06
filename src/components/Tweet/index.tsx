@@ -58,7 +58,8 @@ const Tweet: React.FC<Props> = ({
         <UserData>
           <Name>{user.name}</Name>
           <span>
-            {user.username} · {timePost}
+            <span>{user.username}</span>
+            <span> · {timePost}</span>
           </span>
         </UserData>
         <Content>
