@@ -33,6 +33,11 @@ export const UserData = styled.div`
     min-width: 30px;
     max-width: 120px;
   }
+  @media (max-width: 375px) {
+    > div:first-child {
+      max-width: 30px;
+    }
+  }
   > span {
     margin-left: 5px;
     color: var(--quinary);
@@ -46,6 +51,11 @@ export const UserData = styled.div`
     > span:first-child {
       min-width: 50px;
       max-width: 100px;
+    }
+    @media (max-width: 375px) {
+      > span:nth-child(2) {
+        width: 50%;
+      }
     }
   }
 `;
@@ -104,9 +114,9 @@ export const Retweet = styled.div`
   }
 
   & > div > div:nth-child(2) > div:nth-child(1) > span {
-    @media (max-width: 575px) {
+    @media (max-width: 500px) {
       & > span {
-        max-width: 100px;
+        max-width: 70px;
       }
     }
   }
